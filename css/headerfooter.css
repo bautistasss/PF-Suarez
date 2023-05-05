@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+body{
+    background-color: #f7f6f6;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.nombreheader{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nombreheader:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transform: scale(1.15); 
+    transition: all 1s;
+    
+}
+
+header h1{
+   font-size: 25px;
+   padding-left: 20px;
+   text-align: center;
+}
+
+nav{
+    padding-right: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transform: scale(1.15); 
+    transition: all 1s;
+}
+
+.div1{
+    padding: 10px;
+}
+footer{
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 40px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.15); 
+    transition: all 1s;
+}
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav{
+        gap: 20px; 
+    }
+
+    header h1{
+        font-size: 20px;
+        padding: 0px;  
+    }
+
+    footer a{
+        padding: 3px;
+    }
+}
